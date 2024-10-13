@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Feature from './components/feature';

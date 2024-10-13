@@ -1,6 +1,4 @@
 'use client';
-
-import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -59,16 +57,9 @@ const Hero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
             >
-              <Button
-                className="text-lg px-6 py-3 bg-purple-600 hover:bg-purple-700 transition-colors duration-300"
-                whileHover={{
-                  scale: 1.2,
-                  transition: { duration: 1 },
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
+              <button className="text-lg px-6 py-3 bg-purple-600 hover:bg-purple-700 transition-colors duration-300">
                 View My Work <ArrowRight className="ml-2" />
-              </Button>
+              </button>
             </motion.div>
           </motion.div>
         </motion.div>

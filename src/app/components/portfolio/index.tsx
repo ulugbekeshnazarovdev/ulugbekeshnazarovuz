@@ -19,6 +19,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 type Project = {
   id: number;
@@ -102,9 +103,11 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
   >
     <Card className="overflow-hidden bg-zinc-900/40 backdrop-brightness-100 backdrop-blur-lg cursor-pointer h-[480px] border-transparent transition-all duration-300 group-hover:bg-white/20">
       <CardHeader className="p-0">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={100}
+          height={192}
           className="w-full h-48 object-cover"
         />
       </CardHeader>
